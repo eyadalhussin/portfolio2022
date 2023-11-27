@@ -1,0 +1,40 @@
+.mainContainer{
+    position:  fixed;
+    top: 25%;
+    left: 3%;
+    height: 50vh;
+    width: 2px;
+    border-top-left-radius: 1px;
+    border-top-right-radius: 1px;
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    z-index: 4;
+    animation: pop 0.3s linear;
+}
+
+@keyframes pop {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+.barColored{
+    width: 100%;
+    height: 33%;
+    background-color: var(--red);
+}
+
+.white{
+    background-color: white;
+}
+
+.black{
+    background-color: black;
+}
+
+.anim{
+    transition: 0.4s linear;
+}

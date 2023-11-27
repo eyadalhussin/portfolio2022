@@ -1,0 +1,37 @@
+<div class="mainContainer">
+    <div class="gradientContainer">
+        <span></span>
+    </div>
+    <div class="topContainer">
+        <!-- First Container -->
+        <div class="firstContainer">
+            <h1 class="projectNameSmall">{{projectName}}</h1>
+            <div class="projectImageContainer" (scroll)="onSliderScroll()" #sliderContainer>
+                <img src="assets/Projects/{{projectName}}1.PNG" alt="" class="projectImage imageWidth">
+                <img src="assets/Projects/{{projectName}}2.PNG" alt="" class="projectImage">
+                <img src="assets/Projects/{{projectName}}3.PNG" alt="" class="projectImage">
+                <img src="assets/Projects/{{projectName}}4.PNG" alt="" class="projectImage">
+            </div>
+            <div class="dotsContainer">
+                <div class="dot" [ngClass]="{filterBlue: dotSelected == 1, filterGrey: dotSelected != 1}"
+                    (click)="snapTo(1)"><span></span></div>
+                <div class="dot" [ngClass]="{filterBlue: dotSelected == 2, filterGrey: dotSelected != 2}"
+                    (click)="snapTo(2)"><span></span></div>
+                <div class="dot" [ngClass]="{filterBlue: dotSelected == 3, filterGrey: dotSelected != 3}"
+                    (click)="snapTo(3)"><span></span></div>
+                <div class="dot" [ngClass]="{filterBlue: dotSelected == 4, filterGrey: dotSelected != 4}"
+                    (click)="snapTo(4)"><span></span></div>
+            </div>
+        </div>
+
+        <!-- Second Container -->
+        <div class="secondContainer">
+            <h1 class="projectNameBig white">{{projectName}}</h1>
+            <span class="descriptionText">{{projectDesc}}</span>
+            <button class="navButton" (click)="navigate()" *ngIf="!external">To Project</button>
+            <a class="navHref" href="{{linkHref}}" *ngIf="external">
+                <button class="navButton">To Project</button>
+            </a>
+        </div>
+    </div>
+</div>

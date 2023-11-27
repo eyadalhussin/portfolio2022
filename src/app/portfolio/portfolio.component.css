@@ -1,0 +1,23 @@
+:host(app-portfolio){
+    font-family: 'Poppins';
+    --blue : #0275D8;
+    --red: #FF0000;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+}
+
+.mainly{
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    /* display: flex; */
+    /* flex-direction: column; */
+    overflow: hidden;
+    background-color: transparent;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    position: relative;
+}

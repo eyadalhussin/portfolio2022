@@ -1,0 +1,13 @@
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+<div class="main">
+    <div class="mainly">
+        <app-loading-screen *ngIf="isLoading"></app-loading-screen>
+        <app-p-navbar *ngIf="visible"></app-p-navbar>
+        <app-progress-bar *ngIf="!photoGalleryActive"></app-progress-bar>
+        <app-nav-buttons *ngIf="!photoGalleryActive"></app-nav-buttons>
+        <app-p-home *ngIf="visible"></app-p-home>
+        <app-p-projects></app-p-projects>
+        <app-p-contact *ngIf="visible"></app-p-contact>
+        <app-portfolio-sidebar *ngIf="sideBarActive"></app-portfolio-sidebar>
+    </div>
+</div>

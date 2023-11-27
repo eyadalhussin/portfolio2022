@@ -1,0 +1,104 @@
+[
+    {
+        "name": "Kanban",
+        "description": "Kanban is a task management application that enables users to create new projects, lists, and tickets. Each ticket can be easily moved between lists by simply dragging and dropping, and it offers multiple options that can be added to it.",
+        "imagesDesktop": [
+            "assets/Portfolio/Projects/Desktop/Kanban1.PNG",
+            "assets/Portfolio/Projects/Desktop/Kanban2.PNG",
+            "assets/Portfolio/Projects/Desktop/Kanban3.PNG",
+            "assets/Portfolio/Projects/Desktop/Kanban4.PNG"
+        ],
+        "imagesMobile": [
+            "assets/Portfolio/Projects/Mobile/Kanban1.PNG",
+            "assets/Portfolio/Projects/Mobile/Kanban2.PNG",
+            "assets/Portfolio/Projects/Mobile/Kanban3.PNG",
+            "assets/Portfolio/Projects/Mobile/Kanban4.PNG"
+        ],
+        "link":"https://kanban-b3785.web.app/"
+    },
+    {
+        "name": "RichStore",
+        "description": "*(TEST-VERSION)* RichShop is a simulation of an E-Commerce website. The User will start with a huge amount of money and can buy very expensive things, like supercars or unique jewelery.",
+        "imagesDesktop": [
+            "assets/Portfolio/Projects/Desktop/RichStore1.PNG",
+            "assets/Portfolio/Projects/Desktop/RichStore2.PNG",
+            "assets/Portfolio/Projects/Desktop/RichStore3.PNG",
+            "assets/Portfolio/Projects/Desktop/RichStore4.PNG"
+        ],
+        "imagesMobile": [
+            "assets/Portfolio/Projects/Mobile/RichStore1.PNG",
+            "assets/Portfolio/Projects/Mobile/RichStore2.PNG",
+            "assets/Portfolio/Projects/Mobile/RichStore3.PNG",
+            "assets/Portfolio/Projects/Mobile/RichStore4.PNG"
+        ],
+        "link":"https://ng-richshop.web.app/"
+    },
+    {
+        "name": "TikTok",
+        "description": "This is a clone of the famous application (TikTok), it has three videos, which the user can like, comment, or share.",
+        "imagesDesktop": [
+            "assets/Portfolio/Projects/Desktop/TikTok1.PNG",
+            "assets/Portfolio/Projects/Desktop/TikTok2.PNG",
+            "assets/Portfolio/Projects/Desktop/TikTok3.PNG",
+            "assets/Portfolio/Projects/Desktop/TikTok4.PNG"
+        ],
+        "imagesMobile": [
+            "assets/Portfolio/Projects/Mobile/TikTok1.PNG",
+            "assets/Portfolio/Projects/Mobile/TikTok2.PNG",
+            "assets/Portfolio/Projects/Mobile/TikTok3.PNG",
+            "assets/Portfolio/Projects/Mobile/TikTok4.PNG"
+        ],
+        "link":"tiktok"
+    },
+    {
+        "name": "TicTacToe",
+        "description": "The regular TicTacToe with 2 differences, first one: it looks cool, second: the impossible AI calculate all possible moves with MiniMax algorithm, which makes it undefeatable.",
+        "imagesDesktop": [
+            "assets/Portfolio/Projects/Desktop/TicTacToe1.PNG",
+            "assets/Portfolio/Projects/Desktop/TicTacToe2.PNG",
+            "assets/Portfolio/Projects/Desktop/TicTacToe3.PNG",
+            "assets/Portfolio/Projects/Desktop/TicTacToe4.PNG"
+        ],
+        "imagesMobile": [
+            "assets/Portfolio/Projects/Mobile/TicTacToe1.PNG",
+            "assets/Portfolio/Projects/Mobile/TicTacToe2.PNG",
+            "assets/Portfolio/Projects/Mobile/TicTacToe3.PNG",
+            "assets/Portfolio/Projects/Mobile/TicTacToe4.PNG"
+        ],
+        "link":"tictactoe"
+    },
+    {
+        "name": "MineSweeper",
+        "description": "The good old minesweeper game, try to get rid of all mines by placing flags on them, but be careful of the explosions.",
+        "imagesDesktop": [
+            "assets/Portfolio/Projects/Desktop/MineSweeper1.PNG",
+            "assets/Portfolio/Projects/Desktop/MineSweeper2.PNG",
+            "assets/Portfolio/Projects/Desktop/MineSweeper3.PNG",
+            "assets/Portfolio/Projects/Desktop/MineSweeper4.PNG"
+        ],
+        "imagesMobile": [
+            "assets/Portfolio/Projects/Mobile/MineSweeper1.PNG",
+            "assets/Portfolio/Projects/Mobile/MineSweeper2.PNG",
+            "assets/Portfolio/Projects/Mobile/MineSweeper3.PNG",
+            "assets/Portfolio/Projects/Mobile/MineSweeper4.PNG"
+        ],
+        "link":"minesweeper"
+    },
+    {
+        "name": "pdfEditor",
+        "description": "This Projects uses the ILovePDF-Api and give the user the possibility, to convert from and to PDF-files, it will work only with a Key, because the number of calls is limited.",
+        "imagesDesktop": [
+            "assets/Portfolio/Projects/Desktop/pdfEditor1.PNG",
+            "assets/Portfolio/Projects/Desktop/pdfEditor2.PNG",
+            "assets/Portfolio/Projects/Desktop/pdfEditor3.PNG",
+            "assets/Portfolio/Projects/Desktop/pdfEditor4.PNG"
+        ],
+        "imagesMobile": [
+            "assets/Portfolio/Projects/Mobile/pdfEditor1.PNG",
+            "assets/Portfolio/Projects/Mobile/pdfEditor2.PNG",
+            "assets/Portfolio/Projects/Mobile/pdfEditor3.PNG",
+            "assets/Portfolio/Projects/Mobile/pdfEditor4.PNG"
+        ],
+        "link":"pdfEditor"
+    }
+]

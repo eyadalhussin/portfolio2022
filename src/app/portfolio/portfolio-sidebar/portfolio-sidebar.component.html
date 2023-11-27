@@ -1,0 +1,34 @@
+<div class="mainContainer" id="sidebarContainer" [@slideIn] [@slideOut]="leaveState" (blur)="closeSidebar()" [tabIndex]="0">
+    <!-- Close Button -->
+    <div class="closeContainer">
+        <button class="closeButton" (click)="closeSidebar()">X</button>
+    </div>
+
+    <!-- Logo -->
+    <div class="logoContainer">
+        <span class="textLarge red">&lt;</span>
+        <span class="textLarge primary">E</span>
+        <span class="textLarge red">/</span>
+        <span class="textLarge primary" >Dev</span>
+        <span class="textLarge red">&gt;</span>
+    </div>
+
+    <!-- Navs -->
+    <div class="navsContainer">
+        <div class="nav sideBarNav" (click)="navigate('home')">
+            <span class="textMedium primary">HOME</span>
+        </div>
+        <div class="nav primary" (click)="navigate('projects')">
+            <span class="textMedium primary">PROJECTS</span>
+        </div> 
+        <div class="nav primary" (click)="navigate('contact')">
+            <span class="textMedium primary">CONTACT</span>
+        </div>
+    </div>
+
+    <!-- Rights -->
+    <div class="rightsContainer">
+        <span class="textSmall rightsText primary">© 2023 E-EDEV.ALL RIGHTS RESERVED.</span>
+    </div>
+
+</div>

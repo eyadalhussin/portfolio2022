@@ -1,0 +1,14 @@
+<div class="mainContainer">
+    <div class="logoContainer">
+        <div class="logo" (click)="navigateToHome()">
+            <span class="large red">&lt;</span>
+            <span class="large anim" [ngClass]="{black: mainColor === 'black', white: mainColor === 'white'}">E</span>
+            <span class="large red">/</span>
+            <span class="large anim" [ngClass]="{black: mainColor === 'black', white: mainColor === 'white'}">Dev</span>
+            <span class="large red">&gt;</span>
+        </div>
+    </div>
+    <div class="navs">
+        <img src="assets/Portfolio/Icons/HamMenu.png" alt="" class="hamIcon anim" [ngClass]="{filterWhite: mainColor === 'white'}" (click)="openSidebar()">
+    </div>
+</div>

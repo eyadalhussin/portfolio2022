@@ -1,0 +1,97 @@
+:host(app-p-about) {
+    height: 100vh;
+    width: 100vw;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.mainContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    background-color: #091D2B;
+    background-color: blue;
+}
+
+.topContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 30%;
+    padding: 1em;
+    background-color: red;
+}
+
+.bottomContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 50%;
+    background-color: green;
+    gap: 1em;
+}
+
+.servicesContainer{
+    width: 70%;
+    max-width: 70%;
+    height: 100%;
+    display: flex;
+    scroll-snap-type: x mandatory;
+    overflow: scroll;
+    scroll-behavior: smooth;
+}
+
+.headline{
+    font-size: 1.2em;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+}
+
+.arrowContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    height: 100%;
+    width: 10%;
+}
+
+.arrow{
+    max-width: 35px;
+    max-height: 35px;
+}
+
+.white {
+    color: white;
+}
+
+.blue {
+    color: var(--blue);
+}
+
+.filterBlue {
+    filter: invert(38%) sepia(100%) saturate(4871%) hue-rotate(194deg) brightness(95%) contrast(98%);
+}
+
+.filterGrey{
+    filter: invert(67%) sepia(95%) saturate(0%) hue-rotate(136deg) brightness(99%) contrast(91%);
+}
+
+@media (min-width: 768px) {
+}

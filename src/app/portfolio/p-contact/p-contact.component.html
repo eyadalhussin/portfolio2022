@@ -1,0 +1,84 @@
+<div class="mainContainer" [@ContState]="contState" id="contactContainer" #container [ngClass]="{containerAnimation: contactContainerAnimation}">
+    <!-- Top Container -->
+    <div class="topContainer">
+        <span class="headline">Contact</span>
+    </div>
+
+    <!-- Bottom Container -->
+    <div class="bottomContainer" >
+        <!-- First Container -->
+        <div class="firstContainer" *ngIf="!keyboardOpened">
+
+            <div class="talkContainer">
+                <span class="textLarge white">Let's Talk!</span>
+            </div>
+
+            <div class="doSomething">
+                <span class="white textMedium">And do <span class="red">something cool</span> together !
+                    Send me a message or contact me under below contact forms
+                    Will be glad to hear from you !</span>
+            </div>
+
+            <div class="contactIcons">
+                <img src="assets/Portfolio/Icons/linkedIn.png" alt="" class="contactIcon filterRed" (click)="navigateToLinkedin()">
+                <img src="assets/Portfolio/Icons/email.png" alt="" class="contactIcon filterRed"
+                    (click)="setContactText('eyad.alhussin11@gmail.com')">
+                <img src="assets/Portfolio/Icons/whatsapp.png" alt="" class="contactIcon filterRed"
+                    (click)="setContactText('+49 173 88 23 411')">
+            </div>
+
+            <div class="contactTextContainer">
+                <span class="contactText" style="color: transparent;">.</span>
+                <span class="contactText" style="color: white;" *ngIf="contactText != ''" [@fadeOut]>
+                    {{contactText}}
+                </span>
+            </div>
+        </div>
+
+        <div class="breaker" *ngIf="!keyboardOpened"><span></span></div>
+
+        <!-- Second Container -->
+        <form class="secondContainer" (ngSubmit)="onSubmit(form)" #form="ngForm">
+            <!-- Container for name and E-Mail -->
+            <div class="nameEmailContainer">
+                <!-- Name -->
+                <div class="nameContainer">
+                    <span class="inputText">Your Name</span>
+                    <input 
+                    type="text" 
+                    class="formInput" 
+                    name="name" 
+
+                    ngModel required>
+                </div>
+                <!-- E-Mail -->
+                <div class="nameContainer">
+                    <span class="inputText">Your E-Mail</span>
+                    <input 
+                    type="text" 
+                    class="formInput" 
+                    name="email" 
+                    email
+
+                    ngModel required>
+                </div>
+
+            </div>
+            <!-- Message -->
+            <div class="messageContainer">
+                <span class="inputText">Message</span>
+                <textarea 
+                name="message" 
+                id="" 
+                cols="30" 
+                rows="10" 
+                class="inputArea" 
+
+                ngModel required></textarea>
+            </div>
+            <div class="sendButtonContainer">
+                <button class="sendButton" [ngClass]="{redGradient: buttonText == 'Send', greenGradient: buttonText == 'Thanks !'}" type="submit" [disabled]="!form.valid">{{buttonText}}</button>
+            </div>
+        </form>
+    </div>
+</div>

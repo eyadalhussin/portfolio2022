@@ -1,0 +1,38 @@
+<div class="mainContainer" [@ContState]="ContState">
+    <!-- Headline -->
+    <div class="headline">
+        <span class="textLarge">My Projects</span>
+    </div>
+
+    <div class="elementsContainer">
+        <!-- Top Container -->
+        <div class="topContainer">
+            <app-device-component *ngIf="!isLoading"></app-device-component>
+        </div>
+        <!-- // Top container -->
+
+        <!-- Bottom Container -->
+        <div class="bottomContainer" *ngIf="!isLoading">
+            <!-- Project Name -->
+            <span class="textMedium" style="font-weight: 600;" [ngClass]="{textAnimation: textAnimation}">{{activeProject.name}}</span>
+            <!-- Project Description -->
+            <span class="textSmall description" [ngClass]="{textAnimation: textAnimation}">{{activeProject.description}}</span>
+            <!-- Project Techniques -->
+            <span class="textSmall" style="font-weight: 600;" [ngClass]="{textAnimation: textAnimation}">Used Languages :</span>
+            <!-- Techniques Buttons -->
+            <div class="techniquesButtons" [ngClass]="{textAnimation: textAnimation}">
+                <div class="projectButton">HTML</div>
+                <div class="projectButton">CSS</div>
+                <div class="projectButton">JS</div>
+            </div>
+            <!-- Project Buttons -->
+            <div class="projectButtons" [ngClass]="{textAnimation: textAnimation}">
+                <div class="projectButton" (click)="navigate()">To Project</div>
+                <div class="codeButton" (click)="navigateToGit()">View Code</div>
+            </div>
+        </div>
+    </div>
+
+    <app-photo-gallery *ngIf="photoGalleryActive"></app-photo-gallery>
+
+</div>

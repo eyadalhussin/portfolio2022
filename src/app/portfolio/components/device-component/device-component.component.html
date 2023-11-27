@@ -1,0 +1,48 @@
+<!-- Navigation Arrows -->
+<div class="arrowCont">
+    <span class="red chevron" style="font-weight: 600;" (click)="getPrevProject()">&lt;</span>
+    <span class=" textMedium" style="font-weight: 600;">{{projectIndex+1}}/6</span>
+    <span class="red chevron" style="font-weight: 600;" (click)="getNextProject()">&gt;</span>
+</div>
+
+<!-- Images -->
+<div class="deviceContainer" [ngClass]="{deviceContainerAnimation: deviceAnimation}">
+    <!-- Images Container -->
+    <div class="projectImageCont" *ngIf="isLoading">
+        <app-portfolio-spinner ></app-portfolio-spinner>
+    </div>
+    <div class="projectImageCont" (scroll)="onSliderScroll()" *ngIf="!isLoading">
+        <!-- Spinner -->
+        <!-- Image Container -->
+        <div class="showImageContainer" 
+        *ngFor="let photo of projectImages; let i = index" 
+        (mouseenter)="setSelectedIndex(i)" 
+        (mouseleave)="setSelectedIndex(5)">
+            <img src="{{photo}}" alt="" class="imgLaptop">
+            <div class="searchContainer" *ngIf="selectedIndex == i" [@fadeOut]>
+                <img src="assets/Portfolio/Icons/Search.png" alt="" class="showImageIcon" (click)="openGallery(i)">
+            </div>
+        </div>
+    </div>
+    <!-- <img src="assets/Portfolio/Projects/Desktop/RichStore5.PNG" alt="" class=""> -->
+    <!-- Dot -->
+    <div class="deviceDotContainer">
+        <img src="assets/Portfolio/Icons/dot.png" alt="" class="deviceDot filterWhite">
+    </div>
+</div>
+
+<!-- Laptop Board -->
+<div class="laptopBoard" [ngClass]="{deviceContainerAnimation: deviceAnimation}">
+    <img src="assets/Portfolio/Icons/Laptop4.png" alt="" class="laptopBorder">
+</div>
+
+<div class="dots">
+    <img src="assets/Portfolio/Icons/dot.png" alt="" class="dot" [ngClass]="{filterRed: selectedDot === 1}"
+        (click)="selectDot(1)">
+    <img src="assets/Portfolio/Icons/dot.png" alt="" class="dot" [ngClass]="{filterRed: selectedDot === 2}"
+        (click)="selectDot(2)">
+    <img src="assets/Portfolio/Icons/dot.png" alt="" class="dot" [ngClass]="{filterRed: selectedDot === 3}"
+        (click)="selectDot(3)">
+    <img src="assets/Portfolio/Icons/dot.png" alt="" class="dot" [ngClass]="{filterRed: selectedDot === 4}"
+        (click)="selectDot(4)">
+</div>

@@ -1,0 +1,100 @@
+.mainContainer {
+    width: 100%;
+    height: 7%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1em;
+    z-index: 4;
+}
+
+.logoContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    transition: 0.2s ease;
+    cursor: pointer;
+    gap: 0;
+}
+
+.logo:hover {
+    gap: 0.4em;
+}
+
+.navs {
+    position: absolute;
+    top: 35%;
+    right: 5%;
+}
+
+.nav {
+    all: unset;
+    font-size: 1.1em;
+    font-weight: 400;
+    border: 1px solid transparent;
+    padding: 0.5em;
+    color: white;
+    cursor: pointer;
+    /* transition: 0.2s linear; */
+    border-radius: 2px;
+}
+
+.nav:hover {
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.hamIcon{
+    max-width: 30px;
+    max-height: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.hamIcon:hover{
+    transform: scale(1.2);
+}
+
+.anim{
+    transition: 0.5s ease;
+}
+
+.black{
+    color: #323232;
+}
+
+.white {
+    color: white;
+}
+
+.blue {
+    color: var(--blue);
+}
+
+.red{
+    color: var(--red);
+}
+
+.large {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.filterWhite{
+    filter: invert(97%) sepia(4%) saturate(395%) hue-rotate(286deg) brightness(117%) contrast(100%);
+}
+
+@media (min-width: 768px) {
+    .logoContainer {
+        justify-content: flex-start;
+        padding-left: 2em;
+    }
+}

@@ -1,0 +1,18 @@
+<div class="mainContainer" [@popOut] = galleryState >
+    <div class="closeContainer">
+        <div class="arrowContainer" (click)="scrollLeft()">
+            <span class="arrowLeft">&lt;</span>
+        </div>
+        <div class="closeButtonContainer">
+            <button class="closeButton" (click)="closeGallery()">X</button>
+        </div>
+        <div class="arrowContainer">
+            <span class="arrowRight" (click)="scrollRight()">&gt;</span>
+        </div>
+    </div>
+    <div class="photosContainer" id="photoGalleryContainer">
+        <!-- <div class="photos"> -->
+            <img src="{{photo}}" alt="" class="photoGalleryImage" *ngFor="let photo of projectImages">
+        <!-- </div> -->
+    </div>
+</div>

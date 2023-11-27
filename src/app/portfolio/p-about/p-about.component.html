@@ -1,0 +1,29 @@
+<div class="main">
+    <div class="mainContainer">
+        <!-- Top Container -->
+        <div class="topContainer">
+            <span class="headline">Take your Website to the <span class="blue">next Level</span> with the most modern
+                techniques of designing and
+                developing <span class="blue">single page applications</span></span>
+        </div>
+        <!-- Bottom Container -->
+        <div class="bottomContainer">
+            <!-- ArrowLeft -->
+            <div class="arrowContainer" (click)="scrollLeft(servicesContainer)">
+                <img src="assets/Portfolio/Icons/left.png" alt="" class="arrow" [@arrowState]="leftState" [ngClass]="{filterGrey : leftEnd, filterBlue : !leftEnd}">
+            </div>
+
+            <!-- Services -->
+            <div class="servicesContainer" #servicesContainer>
+                <app-service-card headline="One"></app-service-card>
+                <app-service-card headline="Two"></app-service-card>
+                <app-service-card headline="Three"></app-service-card>
+            </div>
+
+            <!-- ArrowRight -->
+            <div class="arrowContainer"  (click)="scrollRight(servicesContainer)">
+                <img src="assets/Portfolio/Icons/right.png" alt="" class="arrow" [@arrowState]="rightState" [ngClass]="{filterGrey : rightEnd, filterBlue : !rightEnd}">
+            </div>
+        </div>
+    </div>
+</div>

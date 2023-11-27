@@ -1,0 +1,24 @@
+<div class="mainContainer" [@ContState]="contState">
+    <!-- First Container -->
+    <div class="firstContainer">
+        <div class="welcomeContainer">
+            <span class="textMedium white" [ngClass]="{textAnimation: textAnimation}"> Hello ! My name is Eyad</span>
+        </div>
+        <h3 class="textLarge white infoText" [ngClass]="{textAnimation: textAnimation}">I am an IT-Student</h3>
+        <h3 class="textLarge white infoText" [ngClass]="{textAnimation: textAnimation}">and Developer</h3>
+        <!-- <div class="icons">
+            <img src="assets/Portfolio/Icons/facebook.png" alt="" class="icon filterWhite">
+            <img src="assets/Portfolio/Icons/github.png" alt="" class="icon filterWhite">
+            <img src="assets/Portfolio/Icons/whatsapp.png" alt="" class="icon filterWhite">
+            <img src="assets/Portfolio/Icons/linkedIn.png" alt="" class="icon filterWhite">
+        </div> -->
+        <div class="buttons">
+            <button class="projectsButton" (click)="navigateToProjects()" [ngClass]="{textAnimation: textAnimation}">Projects</button>
+            <button class="contactButton" (click)="navigateToContact()" [ngClass]="{textAnimation: textAnimation}">Contact</button>
+        </div>
+    </div>
+    <!-- Second Container -->
+    <div class="secondContainer">
+        <img src="assets/Portfolio/Man.png" alt="" class="manIcon filterWhite">
+    </div>
+</div>
